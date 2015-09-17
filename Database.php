@@ -11,7 +11,7 @@ define ("ADMIN_TITLE", "MwahChat AdminPanel");
 define ("DB_HOST", "localhost");
 define ("DB_USER", "mwahchat_admin");
 define ("DB_PASS", "chengge111");
-define ("DB_NAME", "mwahchat_sobeys");
+define ("DB_NAME", "sobeyspush");
 //}
 
 
