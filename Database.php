@@ -11,11 +11,11 @@ session_start();
 //env[DB_USER] = deploy
 //env[DB_PASS] = JQvxZgFeL
 
-putenv("DB_HOST=production");
+putenv("PHP_ENV=production");
+putenv("DB_HOST=ec2-23-20-42-201.compute-1.amazonaws.com");
 putenv("DB_NAME=sobeyspush");
 putenv("DB_USER=deploy");
 putenv("DB_PASS=JQvxZgFeL");
-
 
 class Database {
 
