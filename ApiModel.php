@@ -7,7 +7,7 @@ class ApiModel {
 	private $_provider = null;
 
 	private $_host = "www.mwahchat.com";
-    	private $_google_api_key = "AIzaSyAkzewSegPxm39WsKIREgGPozUkpQPTcHs";
+    private $_google_api_key = "AIzaSyAkzewSegPxm39WsKIREgGPozUkpQPTcHs";
 
 	public function __construct() {
 		$this -> _provider = new Database();

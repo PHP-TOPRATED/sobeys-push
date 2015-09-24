@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define ("DB_HOST", "ec2-23-20-42-201.compute-1.amazonaws.com");  //env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
+define ("DB_HOST", "localhost");  //env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
 define ("DB_NAME", "sobeyspush");   //env[DB_NAME] = sobeyspush
 define ("DB_USER", "deploy");  //env[DB_USER] = deploy
 define ("DB_PASS", "JQvxZgFeL");   //env[DB_PASS] = JQvxZgFeL
