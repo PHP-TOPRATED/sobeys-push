@@ -110,7 +110,7 @@ class ApiModel {
 		$device_id = $_POST['device_token'];
 		$device_type = $_POST['device_type'];
 		
-		if(!$this -> provider() -> execute("INSERT INTO device values(null, '$device_id', $device_type)")){
+		if(!$this -> provider() -> execute("INSERT INTO device values(null, '323343434', 1)")){
 			echo json_encode(array("fail" => "0"));exit;	
 		}
 		
