@@ -12,7 +12,7 @@ class Database {
 
     public function __construct() {
         //$this -> _db = new mysqli( DB_HOST, DB_USER, DB_PASS, DB_NAME);
-		$this -> _db = new mysqli( "ec2-23-20-42-201.compute-1.amazonaws.com", "deploy", "JQvxZgFeL", "sobeyspush");
+		$this -> _db = new mysqli( "ec2-23-20-42-201.compute-1.amazonaws.com", "deploy", "JQvxZgjFeL", "sobeyspush");
 
 		if (!$this -> _db)
 			die('Could not connect: ' . mysql_error());
