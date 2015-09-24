@@ -6,11 +6,6 @@ session_start();
 //define ("DB_USER", "deploy");  //env[DB_USER] = deploy
 //define ("DB_PASS", "JQvxZgFeL");   //env[DB_PASS] = JQvxZgFeL
 
-//env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
-//env[DB_NAME] = sobeyspush
-//env[DB_USER] = deploy
-//env[DB_PASS] = JQvxZgFeL
-
 putenv("PHP_ENV=production");
 putenv("DB_HOST=ec2-23-20-42-201.compute-1.amazonaws.com");
 putenv("DB_NAME=sobeyspush");
