@@ -1,17 +1,18 @@
 <?php
 session_start();
 
-define ("DB_HOST", "localhost");  //env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
-define ("DB_NAME", "sobeyspush");   //env[DB_NAME] = sobeyspush
-define ("DB_USER", "deploy");  //env[DB_USER] = deploy
-define ("DB_PASS", "JQvxZgFeL");   //env[DB_PASS] = JQvxZgFeL
+//define ("DB_HOST", "ec2-23-20-42-201.compute-1.amazonaws.com");  //env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
+//define ("DB_NAME", "sobeyspush");   //env[DB_NAME] = sobeyspush
+//define ("DB_USER", "deploy");  //env[DB_USER] = deploy
+//define ("DB_PASS", "JQvxZgFeL");   //env[DB_PASS] = JQvxZgFeL
 
 class Database {
 
     var $_db = null;
 
     public function __construct() {
-        $this -> _db = new mysqli( DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        //$this -> _db = new mysqli( DB_HOST, DB_USER, DB_PASS, DB_NAME);
+		$this -> _db = new mysqli( "ec2-23-20-42-201.compute-1.amazonaws.com", "deploy", "JQvxZgFeL", "sobeyspush");
 
 		if (!$this -> _db)
 			die('Could not connect: ' . mysql_error());
