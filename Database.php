@@ -1,19 +1,16 @@
 <?php
 session_start();
-define ("ADMIN_TITLE", "MwahChat AdminPanel");
-//if($_SERVER['REMOTE_ADDR'] === '127.0.0.1' || $_SERVER['REMOTE_ADDR'] === '192.168.1.212'){
-//    define ("DB_HOST", "localhost");
-//    define ("DB_USER", "mwahchat_admin");
-//    define ("DB_PASS", "chengge111");
-//    define ("DB_NAME", "mwahchat_db");
 
-//} else{
-define ("DB_HOST", "localhost");
-define ("DB_USER", "mwahchat_admin");
-define ("DB_PASS", "chengge111");
-define ("DB_NAME", "sobeyspush");
-//}
+//define ("DB_HOST", "ec2-23-20-42-201.compute-1.amazonaws.com");  //env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
+//define ("DB_NAME", "sobeyspush");   //env[DB_NAME] = sobeyspush
+//define ("DB_USER", "deploy");  //env[DB_USER] = deploy
+//define ("DB_PASS", "JQvxZgFeL");   //env[DB_PASS] = JQvxZgFeL
 
+evn[PHP_ENV] = production
+env[DB_HOST] = ec2-23-20-42-201.compute-1.amazonaws.com
+env[DB_NAME] = sobeyspush
+env[DB_USER] = deploy
+env[DB_PASS] = JQvxZgFeL
 
 class Database {
 
